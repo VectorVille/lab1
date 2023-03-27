@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --grey: #b4b4b4;
+  --white10: rgba(255, 255, 255, 0.1);
+  --white15: rgba(255, 255, 255, 0.15);
+  --medium: 500;
+  --demi: 600;
+  --bold: 700;
+  --light: 200;
+  --book: 300;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: aqua;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid white;
+}
+
+h1 {
+  font-weight: var(--bold);
+  font-size: 4.5rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-weight: var(--demi);
+  font-size: 3.5rem;
+  line-height: 3rem;
+  color: white;
+}
+
+h4 {
+  font-weight: var(--medium);
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
+
+header {
+  background-color: var(--white10);
+}
+
+header button {
+  border: none;
+  background-color: transparent;
+}
+
+.first_section button {
+  font-weight: var(--medium);
+  font-size: 2rem;
+  line-height: 3rem;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 90px;
+}
+
+.second_section button {
+  font-weight: var(--medium);
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+
+.second_section div {
+  background-color: var(--white10);
+  border: none;
+  border-radius: 20px;
+}
+
+.second_section span {
+  font-weight: var(--demi);
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.second_section div button {
+  border: none;
+}
+
+.second_section div button span {
+  font-size: 3rem;
+  line-height: 1.4rem;
+  color: black;
+}
+
+.third_section div {
+  background-color: var(--white10);
+  border: none;
+  border-radius: 20px;
+}
+
+.third_section p {
+  font-weight: var(--light);
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+.third_section :first-child {
+  filter: drop-shadow(10px, 10px, 10px, black);
+}
+
+.third_section :first-child p {
+  color: white;
+}
+
+.third_section :first-child h4 {
+  color: white;
+}
+
+.third_section .integration p {
+  line-height: 1.4rem;
+}
+
+.fourth_section h2 {
+  line-height: 1.4rem;
+}
+
+.fourth_section p {
+  font-weight: var(--light);
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: white;
+}
+
+.fourth_section :nth-child(2) p {
+  text-align: right;
+}
+
+.fifth_section button {
+  background-color: var(--white10);
+  border: none;
+  border-radius: 20px;
+}
+
+.fifth_section button span {
+  display: block;
+  font-weight: var(--book);
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+.fifth_section :nth-child(2) {
+  filter: drop-shadow(10px, 10px, 10px, black);
+}
+
+.sixth_section button {
+  background-color: var(--white10);
+  border: none;
+  border-radius: 15px;
+}
+
+.sixth_section ul li div {
+  background-color: white;
+}
+
+.sixth_section ul :nth-child(2) li div {
+  background-color: var(--grey);
+}
+
+.seventh_section h2 {
+  line-height: 4rem;
+  text-align: center;
+  color: black;
+}
+
+.seventh_section input {
+  font-weight: var(--light);
+  font-size: 1.8rem;
+  line-height: 3rem;
+  border: none;
+  border-radius: 90px;
+}
+
+.seventh_section button {
+  font-weight: var(--medium);
+  font-size: 2.6rem;
+  line-height: 3rem;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 90px;
+}
+
+footer {
+  background-color: var(--white15);
+}
+
+footer a {
+  font-weight: var(--book);
+  font-size: 2.2rem;
+  line-height: 3rem;
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  font-weight: var(--light);
+  font-size: 1.4rem;
+  line-height: 3rem;
+  color: white;
+}
