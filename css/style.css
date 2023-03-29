@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --grey: #b4b4b4;
+  --sky: #678ff2;
   --white10: rgba(255, 255, 255, 0.1);
   --white15: rgba(255, 255, 255, 0.15);
   --medium: 500;
@@ -12,7 +13,18 @@
 
 html {
   font-size: 62.5%;
-  background-color: aqua;
+  box-sizing: border-box;
+  background-color: var(--sky);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
 
 body {
@@ -28,6 +40,7 @@ h1 {
   font-weight: var(--bold);
   font-size: 4.5rem;
   line-height: 4rem;
+  margin-bottom: 100px;
 }
 
 h2 {
@@ -41,15 +54,67 @@ h4 {
   font-weight: var(--medium);
   font-size: 1.4rem;
   line-height: 3rem;
+  text-align: center;
 }
+
+/*********************************************/
 
 header {
   background-color: var(--white10);
+  height: 53px;
+}
+
+.header_div {
+  display: flex;
+  height: 52px;
+}
+
+.header_div_logo,
+.header_div_menu {
+  width: calc(calc(100vw - 1px) / 2);
+  height: 100%;
+}
+
+.vertical_line {
+  width: 1px;
+  height: 100%;
+  background-color: white;
+}
+
+.header_div_logo img {
+  width: 40vw;
+  max-width: 140px;
+}
+
+.header_div_menu img {
+  width: 40vw;
+  max-width: 27px;
 }
 
 header button {
   border: none;
   background-color: transparent;
+  padding: 0;
+}
+
+header hr {
+  margin: 0;
+  height: 1px;
+}
+
+/*********************************************/
+
+.first_section {
+  position: relative;
+  height: 420px;
+  padding-top: 140px;
+}
+
+.sky_img {
+  display: block;
+  position: absolute;
+  top: 150px;
+  z-index: -1;
 }
 
 .first_section button {
@@ -60,37 +125,71 @@ header button {
   background-color: black;
   border: none;
   border-radius: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
+  min-width: 256px;
+  height: 52px;
 }
 
+/*********************************************/
+
 .second_section button {
-  font-weight: var(--medium);
-  font-size: 1.6rem;
-  line-height: 3rem;
-  color: white;
-  border: none;
   background-color: transparent;
+  border: none;
+  width: 30px;
 }
 
 .second_section div {
   background-color: var(--white10);
   border: none;
   border-radius: 20px;
+  min-width: 290px;
+  position: relative;
+}
+
+.second_section div img {
+  display: block;
+  position: absolute;
+  top: -70px;
+  left: -20px;
 }
 
 .second_section span {
   font-weight: var(--demi);
   font-size: 1rem;
   line-height: 1.4rem;
+  display: block;
+  padding: 15px 5px 15px 100px;
 }
 
 .second_section div button {
   border: none;
-}
-
-.second_section div button span {
+  font-weight: var(--demi);
   font-size: 3rem;
   line-height: 1.4rem;
   color: black;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+/*********************************************/
+
+.third_section {
+  padding-bottom: 100px;
+}
+
+.third_section div div {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+.third_section img {
+  display: block;
 }
 
 .third_section div {
@@ -122,8 +221,19 @@ header button {
   line-height: 1.4rem;
 }
 
+/*********************************************/
+
+.fourth_section {
+  padding-top: 110px;
+}
+
+.fourth_section_block {
+  margin-left: 30px;
+}
+
 .fourth_section h2 {
   line-height: 1.4rem;
+  margin-bottom: 25px;
 }
 
 .fourth_section p {
@@ -133,14 +243,41 @@ header button {
   color: white;
 }
 
-.fourth_section :nth-child(2) p {
+.fourth_section :nth-child(2) div p {
   text-align: right;
+}
+
+.fourth_section :nth-child(1) img {
+  max-width: 861px;
+}
+
+.fourth_section :nth-child(2) img {
+  max-width: 1261px;
+}
+
+.fourth_section :nth-child(3) img {
+  max-width: 570px;
+}
+
+/*********************************************/
+
+.fifth_section {
+  padding-top: 110px;
+}
+
+.fifth_section h2 {
+  margin-bottom: 70px;
 }
 
 .fifth_section button {
   background-color: var(--white10);
   border: none;
   border-radius: 20px;
+  max-width: 320px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 15px;
 }
 
 .fifth_section button span {
@@ -150,10 +287,17 @@ header button {
   line-height: 2.5rem;
   text-align: center;
   color: white;
+  margin-bottom: 20px;
 }
 
 .fifth_section :nth-child(2) {
   filter: drop-shadow(10px, 10px, 10px, black);
+}
+
+/*********************************************/
+
+.sixth_section {
+  padding-top: 170px;
 }
 
 .sixth_section button {
@@ -169,6 +313,8 @@ header button {
 .sixth_section ul :nth-child(2) li div {
   background-color: var(--grey);
 }
+
+/*********************************************/
 
 .seventh_section h2 {
   line-height: 4rem;
@@ -193,6 +339,8 @@ header button {
   border: none;
   border-radius: 90px;
 }
+
+/*********************************************/
 
 footer {
   background-color: var(--white15);
