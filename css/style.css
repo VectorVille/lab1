@@ -15,8 +15,44 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  background-color: var(--sky);
   overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(45, 45, 176, 0) 72%,
+      rgba(103, 143, 242, 1) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(45, 45, 176, 0) 72%,
+      rgba(103, 143, 242, 1) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(45, 45, 176, 0) 72%,
+      rgba(103, 143, 242, 1) 100%
+    ),
+    linear-gradient(
+      270deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(45, 45, 176, 0) 72%,
+      rgba(103, 143, 242, 1) 100%
+    ),
+    url(/img/sky.webp), url(/img/cloud.png), url(/img/cloud.png);
+  background-size: 600px 555px, 600px 555px, 600px 555px, 600px 555px,
+    600px 555px, 288px 103px, 440px 158px;
+  background-position: top 100px left -100px, top 100px left -100px,
+    top 100px left -100px, top 100px left -100px, top 100px left -100px,
+    bottom 200px right -150px, bottom 700px left -200px;
+  background-repeat: no-repeat;
+  background-color: var(--sky);
 }
 
 *,
@@ -46,7 +82,6 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
 }
 
 hr {
@@ -60,6 +95,34 @@ h2 {
   font-size: 3.5rem;
   line-height: 3rem;
   color: white;
+}
+
+@media (min-width: 930px) {
+  body {
+    background-image: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 0) 0%,
+        rgba(45, 45, 176, 0) 72%,
+        rgba(103, 143, 242, 1) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 0) 0%,
+        rgba(45, 45, 176, 0) 72%,
+        rgba(103, 143, 242, 1) 100%
+      ),
+      linear-gradient(
+        270deg,
+        rgba(2, 0, 36, 0) 0%,
+        rgba(45, 45, 176, 0) 72%,
+        rgba(103, 143, 242, 1) 100%
+      ),
+      url(/img/sky.webp), url(/img/cloud.png), url(/img/cloud.png);
+    background-size: 1440px 1333px, 1440px 1333px, 1440px 1333px, 1440px 1333px,
+      703px 252px, 1123px 402px;
+    background-position: top center, top center, top center, top center,
+      bottom 600px left -350px, bottom 130px right -650px;
+  }
 }
 
 /*********************************************/
@@ -156,6 +219,14 @@ header button {
 
 .first_section {
   padding-top: 140px;
+  position: relative;
+}
+
+.first_section img {
+  position: absolute;
+  width: 375px;
+  z-index: -1;
+  filter: blur(2px);
 }
 
 h1 {
@@ -199,6 +270,10 @@ h1 {
     padding: 30px 30px;
     position: relative;
     top: -30px;
+  }
+
+  .first_section img {
+    width: auto;
   }
 }
 
@@ -347,11 +422,15 @@ h1 {
   flex: 5;
 }
 
-.third_section_content :first-child p {
+.development {
+  filter: drop-shadow(0 0 0 var(--black50));
+}
+
+.development p {
   color: white;
 }
 
-.third_section_content :first-child h4 {
+.development h4 {
   color: white;
 }
 
@@ -634,6 +713,19 @@ h1 {
   left: 25px;
 }
 
+#learnAbout {
+  filter: drop-shadow(0 0 0 black);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.14889705882352944) 0%,
+    rgba(2, 0, 36, 0) 94%,
+    rgba(0, 0, 0, 0) 97%
+  );
+}
+
 #learnAbout .rectangle {
   position: absolute;
   top: 190px;
@@ -795,6 +887,7 @@ h1 {
   .second_review .review_block_img {
     width: 500px;
     height: 274px;
+    filter: drop-shadow(0px 0px 21px rgba(0, 0, 0, 0.23));
   }
 
   .second_review .review_person {
