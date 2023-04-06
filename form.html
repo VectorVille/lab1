@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form_style.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/img/logo.png" alt="logo" />
+      </div>
+      <div class="about_us">
+        <ul>
+          <li><a href="index.html">main page</a></li>
+          <li><a href="#">about us</a></li>
+          <li><a href="tel:+71234567890">contact: +7-123-456-78-90</a></li>
+        </ul>
+      </div>
+      <div class="covid_update">
+        <a href="#">COVID-19 UPDATE</a>
+      </div>
+      <div class="language">
+        <button>
+          <img src="/img/earth.svg" alt="earth" />
+        </button>
+      </div>
+      <div class="menu">
+        <button>
+          <img src="/img/menu.svg" alt="menu" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper620">
+        <form name="contact" method="POST" data-netlify="true">
+          <fieldset>
+            <legend>Personal information</legend>
+            <label
+              >Name<input
+                type="text"
+                name="name"
+                placeholder="John Kalligan"
+                required
+            /></label>
+            <label
+              >Birthday<input type="date" name="birthday" required
+            /></label>
+            <label class="radio"
+              ><input type="radio" name="gender" checked required />M</label
+            >
+            <label class="radio"><input type="radio" name="gender" />W</label>
+            <label
+              >Password<input type="password" name="password" required
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Contact details</legend>
+            <label
+              >Email<input
+                type="email"
+                name="email"
+                placeholder="xxx@gmail.com"
+            /></label>
+            <label
+              >Number phone<input
+                type="tel"
+                name="tel"
+                placeholder="+7xxxxxxxxxx"
+            /></label>
+            <label
+              >Convenient interval for communication<select name="interval">
+                <option value="1">Morning</option>
+                <option value="2" selected>Day time</option>
+                <option value="3">Evening</option>
+                <option value="4">Night</option>
+              </select></label
+            >
+          </fieldset>
+          <button disabled>
+            Reset<img src="/img/reset.svg" alt="reset" />
+          </button>
+          <button>Send<img src="/img/blackarrow.svg" alt="arrow" /></button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="background"></div>
+      <div class="wrapper1170">
+        <div class="footer_content">
+          <div class="social_media">
+            <a href="#"><img src="img/in.png" alt="in" /></a>
+            <a href="#"><img src="img/facebook.png" alt="facebook" /></a>
+            <a href="#"><img src="img/instagram.png" alt="instagram" /></a>
+          </div>
+          <div class="links">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <p>© CloudFlex 2019. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
